@@ -1,0 +1,57 @@
+@silver: #666;
+@white: #fff;
+@black: #000;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url("../img/body-bg.jpg");
+	background-size: cover;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 40px auto;
+	display: block;
+	background: #666;
+	font-size: 0;
+}
+ 
+.contacts {
+	display: inline-block;
+	vertical-align: top;
+	width: 35%;
+	background: @silver;
+	font-size: 12px;
+	color: @white;
+}
+
+.content {
+	display: inline-block;
+	vertical-align: top;
+	width: 65%;
+	background: @white;
+	font-size: 14px;
+	color: @black;
+	padding: 100px 150px 200px 50px;
+
+	&__paragraph {
+		margin: 20px 0;
+	}
+
+	&__title {
+		font-size: 25px;
+		line-height: 2;
+		font-weight: 700;
+		text-transform: uppercase;
+		border-bottom: 1px solid @silver;
+	}
+}
+
+
